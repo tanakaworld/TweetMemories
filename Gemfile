@@ -43,3 +43,6 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# static asset serving and loggin on Heroku
+gem 'rails_12factor', group: :production
