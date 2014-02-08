@@ -16,11 +16,11 @@
 #
 development:
   adapter: postgresql
-  encoding: unicode
-  database: Tweet-Memories_development
+  encoding: UTF-8
+  database: tweetmemories_dev
   pool: 5
-  username: Tweet-Memories
-  password:
+  username: tweetmemories
+  password: twitterviewer
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
