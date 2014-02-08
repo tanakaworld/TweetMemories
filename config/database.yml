@@ -51,10 +51,10 @@ test:
   username: Tweet-Memories
   password:
 
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: Tweet-Memories_production
-  pool: 5
-  username: Tweet-Memories
-  password:
+# production:
+#  adapter: postgresql
+#  encoding: unicode
+#  database: Tweet-Memories_production
+#  pool: 5
+#  username: Tweet-Memories
+#  password:
