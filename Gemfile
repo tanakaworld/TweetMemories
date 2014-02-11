@@ -46,3 +46,7 @@ end
 
 # static asset serving and loggin on Heroku
 gem 'rails_12factor', group: :production
+
+# Omniauth
+gem 'omniauth-twitter'
+gem 'figaro'
