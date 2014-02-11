@@ -1,5 +1,12 @@
 TweetMemories::Application.routes.draw do
-  root 'welcome#index'
+  # Sample Page
+  #root 'welcome#index'
+
+  root 'sessions#index'
+
+  get '/auth/:provider/callback' => 'sessions#create'
+  get '/signout' => 'sessions#destroy', as: :signout
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
