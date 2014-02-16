@@ -48,5 +48,8 @@ end
 gem 'rails_12factor', group: :production
 
 # Omniauth
+gem 'twitter'
+gem 'omniauth'
 gem 'omniauth-twitter'
+
 gem 'figaro'
