@@ -1,9 +1,14 @@
 <H1>Tweet Memories</H1>
 <% if current_user %>
-    Welcome <%= current_user.name %>!
-    <%= link_to "Sign Out", signout_path %>
 
-    <%= link_to "GetTimeLine", twget_path %>
+    <div>
+      <span>@<%= current_user.name %></span>
+      <%= link_to "Sign Out", signout_path %>
+    </div>
+
+    <div>
+      <%= link_to "GetTimeLine", twget_path %>
+    </div>
 
 <% else %>
     <%= link_to "Sign in with Twitter", "/auth/twitter" %>
