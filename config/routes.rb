@@ -4,6 +4,9 @@ TweetMemories::Application.routes.draw do
 
   root 'sessions#index'
 
+  resource :tweets
+  match 'twget/' => 'tweets#gettimeline'
+
   get '/auth/:provider/callback' => 'sessions#create'
   get '/signout' => 'sessions#destroy', as: :signout
 
