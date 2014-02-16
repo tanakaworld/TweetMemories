@@ -4,11 +4,13 @@ TweetMemories::Application.routes.draw do
 
   root 'sessions#index'
 
-  resource :tweets
-  match 'twget/' => 'tweets#gettimeline'
 
   get '/auth/:provider/callback' => 'sessions#create'
   get '/signout' => 'sessions#destroy', as: :signout
+
+  resource :tweets
+  get 'twget/' => 'tweets#gettimeline'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

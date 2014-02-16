@@ -1,0 +1,16 @@
+<H1>Tweets</H1>
+
+<% if @current_user %>
+    <% @current_user.name %>
+<% else %>
+    <p>No CurrentUser Error</p>
+<% end %>
+
+<% if @timelinebuff %>
+    <% @timelinebuff.each do |tlbuff| %>
+        <%= tlbuff.text %>
+        <br>
+    <% end %>
+<% else %>
+    <p>No Timeline Error</p>
+<% end %>
